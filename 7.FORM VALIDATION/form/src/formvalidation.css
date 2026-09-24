@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  padding: 35px 45px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #555;
+}
+
+.form-group textarea {
+  height: 80px;
+  resize: none;
+}
+
+.form-group span {
+  color: #d93025;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-group small {
+  color: #777;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+  padding-top: 8px;
+}
+
+.radio-group label {
+  font-weight: normal;
+}
+
+.radio-group input {
+  width: auto;
+  margin-right: 6px;
+}
+
+.terms label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.terms input {
+  width: auto;
+}
+
+.success {
+  margin-top: 25px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.button-group button {
+  padding: 12px 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #222;
+  color: white;
+}
+
+.clear-btn {
+  background: #ddd;
+  color: #222;
+}
+
+.submit-btn:hover {
+  background: #444;
+}
+
+.clear-btn:hover {
+  background: #ccc;
+}
+
+@media (max-width: 700px) {
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,15 @@
+.student-card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.student-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}

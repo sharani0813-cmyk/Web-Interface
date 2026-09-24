@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Profile</title>
+
+<style>
+body{
+    background:#f2f2f2;
+    text-align:center;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:300px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+input{
+    width:90%;
+    padding:8px;
+    margin:8px 0;
+}
+
+button{
+    width:95%;
+    padding:10px;
+    background:rgb(174, 174, 228);
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkblue;
+}
+
+#card{
+    display:none;
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Student Profile</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="text" id="roll" placeholder="Enter Roll No">
+
+<input type="number" id="marks" placeholder="Enter Marks (1-100)">
+
+<button onclick="show()">Display</button>
+
+<div id="card">
+    <h3 id="sname"></h3>
+    <p><b>Roll No:</b> <span id="sroll"></span></p>
+    <p><b>Marks:</b> <span id="smarks"></span></p>
+    <p><b>Result:</b> <span id="result"></span></p>
+    <p><b>Grade:</b> <span id="grade"></span></p>
+</div>
+
+</div>
+
+<script>
+function show(){
+
+let name = document.getElementById("name").value;
+let roll = document.getElementById("roll").value;
+let marks = Number(document.getElementById("marks").value);
+
+
+if(marks < 1 || marks > 100){
+    alert("Invalid Marks! Please enter marks between 1 and 100.");
+    document.getElementById("card").style.display = "none";
+    return;
+}
+
+let result;
+let grade;
+
+if(marks >= 90){
+    grade = "A";
+    result = "Pass";
+}
+else if(marks >= 75){
+    grade = "B";
+    result = "Pass";
+}
+else if(marks >= 60){
+    grade = "C";
+    result = "Pass";
+}
+else if(marks >= 50){
+    grade = "D";
+    result = "Pass";
+}
+else{
+    grade = "F";
+    result = "Fail";
+}
+
+document.getElementById("sname").innerHTML = name;
+document.getElementById("sroll").innerHTML = roll;
+document.getElementById("smarks").innerHTML = marks;
+document.getElementById("result").innerHTML = result;
+document.getElementById("grade").innerHTML = grade;
+
+document.getElementById("card").style.display = "block";
+
+}
+</script>
+
+</body>
+</html>

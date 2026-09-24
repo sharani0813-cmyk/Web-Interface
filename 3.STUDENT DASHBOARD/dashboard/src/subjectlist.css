@@ -1,0 +1,16 @@
+.subjects {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+}
+
+.subjects h2 {
+  text-align: center;
+}
+
+.subjects li {
+  margin: 8px;
+}

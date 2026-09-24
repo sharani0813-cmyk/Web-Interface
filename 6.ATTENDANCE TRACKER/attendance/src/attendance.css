@@ -1,0 +1,71 @@
+.attendance-container {
+  width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.attendance-container h1 {
+  margin-bottom: 25px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.summary div {
+  padding: 10px 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.summary p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.student button {
+  padding: 7px 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.present-btn {
+  background-color: lightgreen;
+}
+
+.absent-btn {
+  background-color: lightcoral;
+}
+
+.status {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
