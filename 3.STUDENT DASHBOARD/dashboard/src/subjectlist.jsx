@@ -1,4 +1,4 @@
-import "./SubjectList.css";
+import "./subjectlist.css";
 
 function Subject() {
   return (
