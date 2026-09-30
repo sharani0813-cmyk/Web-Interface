@@ -36,9 +36,19 @@ jobs:
           mkdir -p _site
 
       - name: Copy HTML projects
+        shell: bash
         run: |
           for folder in */; do
-            if [ "$folder" = ".git/" ] || [ "$folder" = ".github/" ]; then
+
+            if [ "$folder" = ".git/" ]; then
+              continue
+            fi
+
+            if [ "$folder" = ".github/" ]; then
+              continue
+            fi
+
+            if [ "$folder" = "_site/" ]; then
               continue
             fi
 
@@ -47,7 +57,9 @@ jobs:
             fi
 
             echo "Copying HTML project: $folder"
-            cp -r "$folder" "_site/$folder"
+            mkdir -p "_site/$folder"
+            cp -r "$folder"* "_site/$folder"
+
           done
 
       - name: Copy main index.html
