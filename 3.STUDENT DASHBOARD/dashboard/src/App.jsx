@@ -1,8 +1,8 @@
 
-import Header from "./Header";
-import StudentCard from "./StudentCard";
-import Subject from "./SubjectList";
-import Footer from "./Footer";
+import Header from "./header";
+import StudentCard from "./studentCard";
+import Subject from "./subjectList";
+import Footer from "./footer";
 import "./App.css";
 
 import photo from "./assets/photo.jpg";
