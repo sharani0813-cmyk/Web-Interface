@@ -1,7 +1,7 @@
 
 import Header from "./header";
-import StudentCard from "./studentCard";
-import Subject from "./subjectList";
+import StudentCard from "./studentcard";
+import Subject from "./subjectlist";
 import Footer from "./footer";
 import "./App.css";
 
