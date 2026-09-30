@@ -1,83 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Web Interface Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #d1d5db;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1f2937;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .project a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        .project a:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Web Interface Projects</h1>
+    <header>
+        <h1>Web Interface Projects</h1>
+        <p>My Web Interface Project Collection</p>
+    </header>
 
-    <h2>Projects</h2>
+    <div class="container">
 
-    <!-- Project 1 -->
-    <p>
-        <a href="./1.COUNTER%20APP/COUNTER.HTML">
-            1. Counter App
-        </a>
-    </p>
+        <h2>Projects</h2>
 
-    <!-- Project 2 -->
-    <p>
-        <a href="./2.STUDENT%20DETAILS/STUDENT.HTML">
-            2. Student Details
-        </a>
-    </p>
+        <div class="projects">
 
-    <!-- Project 3 -->
-    <p>
-        <a href="./3.STUDENT%20DASHBOARD/dashboard/">
-            3. Student Dashboard
-        </a>
-    </p>
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>1. Counter App</h3>
+                <a href="./1.COUNTER%20APP/COUNTER.HTML">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 4 -->
-    <p>
-        <a href="./4.PROJECT/">
-            4. Project 4
-        </a>
-    </p>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>2. Student Details</h3>
+                <a href="./2.STUDENT%20DETAILS/STUDENT.HTML">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 5 -->
-    <p>
-        <a href="./5.PROJECT/">
-            5. Project 5
-        </a>
-    </p>
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>3. Student Dashboard</h3>
+                <a href="./3.STUDENT%20DASHBOARD/dashboard/">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 6 -->
-    <p>
-        <a href="./6.PROJECT/">
-            6. Project 6
-        </a>
-    </p>
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>4. Project 4</h3>
+                <a href="./4/">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 7 -->
-    <p>
-        <a href="./7.PROJECT/">
-            7. Project 7
-        </a>
-    </p>
+            <!-- Project 5 -->
+            <div class="project">
+                <h3>5. Project 5</h3>
+                <a href="./5/">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 8 -->
-    <p>
-        <a href="./8.PROJECT/">
-            8. Project 8
-        </a>
-    </p>
+            <!-- Project 6 -->
+            <div class="project">
+                <h3>6. Project 6</h3>
+                <a href="./6/">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 9 -->
-    <p>
-        <a href="./9.PROJECT/">
-            9. Project 9
-        </a>
-    </p>
+            <!-- Project 7 -->
+            <div class="project">
+                <h3>7. Project 7</h3>
+                <a href="./7/">
+                    Open Project
+                </a>
+            </div>
 
-    <!-- Project 10 -->
-    <p>
-        <a href="./10.PROJECT/">
-            10. Project 10
-        </a>
-    </p>
+            <!-- Project 8 -->
+            <div class="project">
+                <h3>8. Project 8</h3>
+                <a href="./8/">
+                    Open Project
+                </a>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project">
+                <h3>9. Project 9</h3>
+                <a href="./9/">
+                    Open Project
+                </a>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project">
+                <h3>10. Project 10</h3>
+                <a href="./10/">
+                    Open Project
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Web Interface Projects © 2026</p>
+    </footer>
 
 </body>
 </html>
